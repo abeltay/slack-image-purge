@@ -5,7 +5,7 @@ require 'uri'
 @token = ''
 
 def list_files
-  ts_to = (Time.now - 2 * 365 * 24 * 60 * 60).to_i # 2 years ago
+  ts_to = (Time.now - 30 * 24 * 60 * 60).to_i # 30 days ago
   params = {
     token: @token,
     ts_to: ts_to,
